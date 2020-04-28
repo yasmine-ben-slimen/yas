@@ -1,0 +1,79 @@
+<div class="home_search">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="home_search_container">
+          <div class="home_search_content">
+            <form  (ngSubmit)="onSubmit()" action="#" class="search_form d-flex flex-row align-items-start justfy-content-start">
+              <div class="search_form_content d-flex flex-row align-items-start justfy-content-start flex-wrap">
+                <div>
+                  <select class="search_form_select">
+                    <option disabled selected  id="ecole" required [(ngModel)]="ecole" > University</option>
+                    <option>Ensit</option>
+                    <option>Enit</option>
+                    <option>Ensi</option>
+                    <option>Isi</option>
+                  </select>
+                </div>
+                <div>
+                  <select class="search_form_select">
+                    <option disabled selected id="type" required [(ngModel)]="type" > Type</option>
+                    <option>household</option>
+                    <option>house</option>
+
+                  </select>
+                </div>
+                <div>
+                  <select class="search_form_select">
+                    <option disabled selected  id="nb_places" required [(ngModel)]="nb_places" >Persons</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>more</option>
+                  </select>
+                </div>
+               
+                <div>
+                  <select class="search_form_select">
+                    <option disabled selected id="distance" required [(ngModel)]="distance" >Distance</option>
+                    <option>less then 1km</option>
+                    <option>about 1km</option>
+                    <option>more then 1km</option>
+                  </select>
+                </div>
+                <div>
+                  <select class="search_form_select">
+                    <option disabled selected id="prix" required [(ngModel)]="prix" >Price</option>
+                    <option>from 100dt to 150dt</option>
+                    <option>from 150dt to 200dt</option>
+                    <option>from 200dt to 250dt </option>
+                    <option>more than 250dt </option>
+                  </select>
+                </div>
+               
+
+
+
+              </div>
+              <div class="btn">
+                <div class="wrap-login100-form-btn">
+                <div class="login100-form-bgbtn ml-auto"></div>
+                <button class="login100-form-btn">
+                  search
+                </button>
+              </div>
+            </div>
+             
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ul>
+  <li *ngFor="let annonce of annonces">
+    <h4>{{annonce.id}} - {{annonce.prix}} {{annonce.type}}</h4>
+  </li>
+</ul>

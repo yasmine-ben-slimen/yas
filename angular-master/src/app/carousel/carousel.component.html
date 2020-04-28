@@ -1,0 +1,109 @@
+
+
+
+<div id="container">
+  <ngb-carousel
+  [showNavigationArrows]="true"
+  [showNavigationIndicators]="true"
+  interval="1200"
+  [keyboard]="true"
+  [pauseOnHover]="true"
+  [wrap]="true"
+  [activeId]="'firstSlide'">
+      <ng-template ngbSlide id="firstSlide">
+  
+        <div class="picsum-img-wrapper"  style="width:100%">
+          <img src="assets/img/foyer1.jpg" alt="Angular Carousel 1"class="mh-100" style="width: 100%; height: 515px">
+        </div>
+        <div class="carousel-caption">
+  
+        </div>
+      </ng-template>
+      <ng-template ngbSlide id="secondSlide">
+        <div class="picsum-img-wrapper"  style="width:100%"
+        >
+          <img src="assets/img/foyer2.jpg" alt="Angular Carousel 2" class="mh-100" style="width: 100%; height: 515px">
+        </div>
+        <div class="carousel-caption">
+  
+        </div>
+      </ng-template>
+      <ng-template ngbSlide id="thirdSlide">
+          <div class="picsum-img-wrapper"  style="width: 100%"
+          >
+            <img src="assets/img/foyer3.jpg" alt="Angular Carousel 3" class="mh-100" style="width: 100%; height: 515px">
+          </div>
+          <div class="carousel-caption">
+  
+          </div>
+        </ng-template>
+        <ng-template ngbSlide id="fourthSlide">
+          <div class="picsum-img-wrapper"  style="width: 100%"
+          >
+            <img src="assets/img/foyer4.png" alt="Angular Carousel 4"class="mh-100" style="width: 100%; height: 515px">
+          </div>
+          <div class="carousel-caption">
+  
+          </div>
+        </ng-template>
+    </ngb-carousel>
+  
+  
+  
+    <div class="super_container">
+      <!-- Home -->
+  
+      <div class="home">
+  
+        <!-- Home Slider -->
+        <div class="home_slider_container">
+          <div class="owl-carousel owl-theme home_slider">
+            <!-- Slide -->
+            <div class="owl-item">
+              <div class="slide_container">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="slide_content">
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Slide -->
+            <div class="owl-item">
+              <div class="slide_container">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Slide -->
+            <div class="owl-item">
+              <div class="slide_container">
+                <div class="container">
+                  <div class="row">
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <!-- Home Search -->
+     <app-search></app-search>
+    </div>
+  
+  </div>
+  
